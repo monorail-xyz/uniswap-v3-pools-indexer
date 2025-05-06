@@ -1,0 +1,9 @@
+type Pool {
+  id: ID!
+  pool: String!
+  factory: String!
+  token0: String!
+  token1: String!
+  fee: BigInt!
+  tickSpacing: BigInt!
+}

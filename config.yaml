@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: v3_pools_indexer
+networks:
+  - id: 10143
+    start_block: 0
+    contracts:
+      - name: V3Pools
+        handler: src/EventHandlers.ts
+        events:
+          - event: PoolCreated(address indexed token0, address indexed token1, uint24 indexed fee, int24 tickSpacing, address pool)
