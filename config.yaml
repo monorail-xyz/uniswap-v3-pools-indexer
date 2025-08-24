@@ -8,3 +8,7 @@ networks:
         handler: src/EventHandlers.ts
         events:
           - event: PoolCreated(address indexed token0, address indexed token1, uint24 indexed fee, int24 tickSpacing, address pool)
+            field_selection:
+              transaction_fields:
+                - "hash"
+                - "to"

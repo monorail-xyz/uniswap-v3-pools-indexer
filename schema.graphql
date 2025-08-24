@@ -1,5 +1,7 @@
 type Pool {
   id: ID!
+  tx: String!
+  created_via: String!
   pool: String!
   factory: String!
   token0: String!
