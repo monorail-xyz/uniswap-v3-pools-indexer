@@ -2,6 +2,8 @@
 name: v3_pools_indexer
 networks:
   - id: 143
+    hypersync_config:
+      url: https://monad.hypersync.xyz
     start_block: 20000000
     contracts:
       - name: V3Pools
