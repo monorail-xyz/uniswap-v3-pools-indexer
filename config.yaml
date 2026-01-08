@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=./node_modules/envio/evm.schema.json
 name: v3_pools_indexer
 networks:
-  - id: 10143
-    start_block: 0
+  - id: 143
+    start_block: 20000000
     contracts:
       - name: V3Pools
         handler: src/EventHandlers.ts
